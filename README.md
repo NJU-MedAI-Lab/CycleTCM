@@ -1,12 +1,12 @@
 # MLLM-Enhanced Region-Aware Bidirectional Evidence-Based Model for Tongue Diagnosis
 
-📌 **MLLM-Enhanced Region-Aware Bidirectional Evidence-Based Model for Tongue Diagnosis (CycleTCM) *MICCAI 2026***
+📌 **MLLM-Enhanced Region-Aware Bidirectional Evidence-Based Model for Tongue Diagnosis (CycleTCM)**
 
 Tongue diagnosis, a convenient and noninvasive traditional diagnostic method in Traditional Chinese Medicine (TCM), provides an important tool for early health screening. Tongue images not only reveal TCM syndrome patterns but also allow a preliminary assessment of relevant organ health. However, most existing methods face three major limitations: (i) syndrome patterns and organ states prediction are often treated as independent tasks, ignoring their coupled mechanisms; (ii) tongue region-dependent signs are insufficiently integrated with global tongue appearance, resulting in inadequate attention to salient local cues; and (iii) clinical priors and TCM knowledge are underutilized, constraining clinically grounded reasoning and interpretability.
 
 To address these limitations, we propose **CycleTCM**, an MLLM-Enhanced Region-Aware Bidirectional Evidence-Based Model for tongue diagnosis. Specifically, first, an **Augmented Global-Local Feature Fusion (AGLFF)** module is introduced to reconcile holistic tongue context with regional cues by mutually refining global and local representations, strengthening region-sensitive evidence extraction. Second, an **Uncertainty-Weighted Bidirectional Mixture-of-Experts (UWBMoE)** module is designed to propagate syndrome-level and organ-level information, thereby stabilizing multi-task learning and cross-level reasoning. Moreover, a multimodal large language model (MLLM) is incorporated to enrich semantic representations and improve alignment between visual evidence and clinically meaningful concepts. Experiments demonstrate that the proposed approach outperforms state-of-the-art baselines on both syndrome patterns and organ states prediction tasks.
 
-<!-- <p align="center"><img src="figures/framework.png" width="800"/></p> -->
+<p align="center"><img src="figures/framework.png" width="800"/></p>
 
 ## 📰News
 
