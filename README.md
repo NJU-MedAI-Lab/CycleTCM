@@ -68,7 +68,7 @@ cd src
 python train/train_model_mllm.py --output_log results_mllm.log
 ```
 
-## 🎇Late Fusion & Analysis Tools
+## 🎇Late Fusion Strategy
 
 For late-fusion strategy of MLLM and visual model predictions, please refer to:
 
