@@ -1,24 +1,16 @@
 # MLLM-Enhanced Region-Aware Bidirectional Evidence-Based Model for Tongue Diagnosis
 
-📌 This is an official PyTorch implementation of **MLLM-Enhanced Region-Aware Bidirectional Evidence-Based Model for Tongue Diagnosis (CycleTCM)**
-
-
-<!-- <p align="center"><img src="assets/overview.png" width="800"/></p> -->
-
-> [**MLLM-Enhanced Region-Aware Bidirectional Evidence-Based Model for Tongue Diagnosis**](https://github.com/NJU-MedAI-Lab/CycleTCM)  
-> *MICCAI 2026*
+📌 **MLLM-Enhanced Region-Aware Bidirectional Evidence-Based Model for Tongue Diagnosis (CycleTCM) *MICCAI 2026***
 
 Tongue diagnosis, a convenient and noninvasive traditional diagnostic method in Traditional Chinese Medicine (TCM), provides an important tool for early health screening. Tongue images not only reveal TCM syndrome patterns but also allow a preliminary assessment of relevant organ health. However, most existing methods face three major limitations: (i) syndrome patterns and organ states prediction are often treated as independent tasks, ignoring their coupled mechanisms; (ii) tongue region-dependent signs are insufficiently integrated with global tongue appearance, resulting in inadequate attention to salient local cues; and (iii) clinical priors and TCM knowledge are underutilized, constraining clinically grounded reasoning and interpretability.
 
 To address these limitations, we propose **CycleTCM**, an MLLM-Enhanced Region-Aware Bidirectional Evidence-Based Model for tongue diagnosis. Specifically, first, an **Augmented Global-Local Feature Fusion (AGLFF)** module is introduced to reconcile holistic tongue context with regional cues by mutually refining global and local representations, strengthening region-sensitive evidence extraction. Second, an **Uncertainty-Weighted Bidirectional Mixture-of-Experts (UWBMoE)** module is designed to propagate syndrome-level and organ-level information, thereby stabilizing multi-task learning and cross-level reasoning. Moreover, a multimodal large language model (MLLM) is incorporated to enrich semantic representations and improve alignment between visual evidence and clinically meaningful concepts. Experiments demonstrate that the proposed approach outperforms state-of-the-art baselines on both syndrome patterns and organ states prediction tasks.
 
-<!-- <p align="center"><img src="assets/framework.png" width="800"/></p> -->
+<!-- <p align="center"><img src="figures/framework.png" width="800"/></p> -->
 
 ## 📰News
 
-**[NOTE]** Random seed is essential for reproducibility. All training scripts use a fixed seed of `42` by default. We recommend reporting results averaged over multiple runs for fair comparison.
-
-**[2026]** CycleTCM is accepted by **MICCAI 2026**.
+**[NOTE]** The paper is accepted by **MICCAI 2026**.
 
 ## 💡Key Features
 
@@ -32,20 +24,20 @@ To address these limitations, we propose **CycleTCM**, an MLLM-Enhanced Region-A
 
 **Tips A**: We test the framework using PyTorch ≥ 2.0 with CUDA support. A GPU with sufficient memory is recommended for MLLM feature extraction and multimodal training.
 
-**Tips B**: Download the Qwen3-VL backbone before MLLM feature extraction:
+**Tips B**: Download the Qwen3-VL backbone before MLLM feature extraction.
 
 ## 📚Data Preparation
 
 Place your tongue image dataset and labels under the `src/data` directory. The preprocessing pipeline consists of two steps:
 
-**Step 1 — Region segmentation (body & edge):**
+**Step 1 — Region segmentation (body & edge).**
 
-**Step 2 — Organ-associated region segmentation:**
+**Step 2 — Organ-associated region segmentation.**
 
-**Step 3 — MLLM feature extraction (for multimodal training):**
+**Step 3 — MLLM feature extraction (for multimodal training).**
 
 
-## ⏳Training CycleTCM
+## ⏳Training the Model
 
 All training scripts should be executed from the `src` directory.
 
