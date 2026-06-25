@@ -80,10 +80,4 @@ python utils/late_fusion.py \
     --truth-json [GROUND_TRUTH]
 ```
 
-## 🎈Acknowledgements
-
-Greatly appreciate the tremendous effort for the following projects!
-
-- [Qwen3-VL](https://modelscope.cn/models/Qwen/Qwen3-VL-4B-Instruct)
-- [PyTorch](https://pytorch.org/) & [torchvision](https://pytorch.org/vision/stable/index.html)
 
