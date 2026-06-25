@@ -18,7 +18,7 @@ To address these limitations, we propose **CycleTCM**, an MLLM-Enhanced Region-A
 - An **AGLFF module** that mutually refines global and local representations via cross-attention and gated fusion, strengthening region-sensitive sign detection.
 - An **UWBMoE module** that performs bidirectional syndrome↔organ information propagation with uncertainty weighting, stabilizing coupled multi-task learning.
 - **MLLM-enhanced multimodal fusion** using [Qwen3-VL-4B-Instruct](https://modelscope.cn/models/Qwen/Qwen3-VL-4B-Instruct) to align visual evidence with TCM clinical priors.
-- Joint prediction of **8 syndrome attributes** and **5 organ states** with weighted BCE loss and comprehensive evaluation (Acc, F1, AUC, MCC, SEN, SPE).
+- Joint prediction of **8 syndrome attributes** and **5 organ states** with weighted BCE loss and comprehensive evaluation.
 
 ## 🛠Setup
 
